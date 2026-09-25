@@ -1,9 +1,7 @@
 import react, { useState } from 'react'
 import gsap from 'gsap'
 import {useGSAP} from '@gsap/react';
-import  stickyNote from './assets/sticky-notes.png'
-
-
+import stickyNote from './assets/sticky-notes.png'
 
 const App = () => {
   const submitHandler = (e)=>{
@@ -36,7 +34,7 @@ const App = () => {
 
   return (
    
-    <div className=" lg:flex h-full w-full p-10  bg-gray-900 ">
+    <div className=" lg:flex h-full p-10  bg-gray-900 ">
        <div>
       <header className="bg-gray-900 p-5 text-center">
         <h1 className="text-3xl flex-col font-bold text-white">Quick Notes🗒️</h1>
@@ -60,7 +58,7 @@ const App = () => {
       </form>
       <div className='lg:w-1/3 lg:border-l-4 p-5'>
       <h1 className="text-lg text-white font-bold  p-4 ">Your Notes🗒️</h1>
-      <div id="notes-container" className="flex flex-wrap items-start justify-start gap-5 mt-5 overflow-auto h-auto">
+      <div className="flex flex-wrap items-start justify-start gap-5 mt-5 overflow-auto h-auto">
         {task.map((item, index) => (
           <div
             key={index}
