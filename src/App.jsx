@@ -1,6 +1,7 @@
 import react, { useState } from 'react'
 import gsap from 'gsap'
 import {useGSAP} from '@gsap/react';
+import  stickyNote from './assets/sticky-notes.png'
 
 
 
@@ -65,7 +66,7 @@ const App = () => {
             key={index}
             className="relative h-auto w-65 max-w-md rounded-[20px] p-5 shadow-lg"
             style={{
-              backgroundImage: "url('/src/assets/sticky-notes.png')",
+              backgroundImage: `url(${stickyNote})`,
               backgroundSize: 'cover',
               backgroundRepeat: 'no-repeat',
               backgroundPosition: 'center',
